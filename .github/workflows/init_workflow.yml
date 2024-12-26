@@ -17,4 +17,4 @@ jobs:
       - name: Correr un script multi línea
         run: |
           echo GitHub Actions Workflow execution date:
-          datetime
+          date
