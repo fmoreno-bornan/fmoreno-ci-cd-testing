@@ -11,10 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
       - name: Correr un simple "echo Hola Mundo"
         run: echo Hello, world!
-
       - name: Correr un script multi línea
         run: |
           echo GitHub Actions Workflow execution date:
           date
+      - name: Show the content of the actual dir
+        run: ls -lash
