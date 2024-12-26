@@ -1,0 +1,20 @@
+# Fmoreno's basic GitHub Actions workflow definition 
+
+name: init
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  Trabajo_1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Correr un simple "echo Hola Mundo"
+        run: echo Hello, world!
+
+      - name: Correr un script multi línea
+        run: |
+          echo GitHub Actions Workflow execution date:
+          datetime
